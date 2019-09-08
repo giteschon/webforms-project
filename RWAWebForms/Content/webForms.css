@@ -1,0 +1,68 @@
+﻿body {
+    margin: 30px;
+    font-family:'Segoe UI';
+    background-color:#efefef;
+    font-size:14px;
+    color:#333;
+}
+
+.mainContainer {
+        margin:30px auto 0;
+    background-color: white;
+   padding:10px;
+
+    -moz-box-shadow: inherit;
+    -webkit-box-shadow: inherit;
+    box-shadow: 0 0 10px #ccc;
+
+    width:1010px;
+    min-height:300px;
+    overflow:hidden;
+}
+
+hr {
+margin:20px 0px;
+}
+
+p {
+text-align:center;
+}
+
+.repoInfo {
+    display: inline-block;
+    min-width: 10px;
+    background-color: #777;
+    color: white;
+    padding: 2px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    align-content: center;
+    /*text-align: center;*/
+    /*position: center;*/
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+h1 {
+margin:0;
+font-weight:100;
+font-size:2em;
+}
+
+
+.osoba {
+    border: 1px solid #dedede;
+    width: 310px;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+
+td {
+padding:5px;
+
+}
+
+label {
+font-weight:bold;
+}

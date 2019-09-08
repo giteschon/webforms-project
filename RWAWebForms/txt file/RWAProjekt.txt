@@ -1,0 +1,5 @@
+ID,NAME,SURNAME,ID_EMAIL1,EMAIL1,ID_EMAIL2,EMAIL2,ID_EMAIL3,EMAIL3,TELEPHONE,CITY,STATUS,PASSWORD
+1,Admin,Admin,1,admin@email.com,,,,,8296,Zagreb,Admin,123
+2,Antonela23,Antić,2,,6,anta@gmail.com,,,,Zagreb,User,321
+3,Peric23,Perić,3,,4,p@gmail.com,5,pp.peric@mail.com,,Zagreb,User,123
+4,ane,ane,6,ane@mail.com,,,,,0123,Zagreb,User,123

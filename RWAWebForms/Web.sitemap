@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="MainMenu"  description="">
+    
+    <siteMapNode url="~\RWAWebForms\DodavanjeOsoba.aspx" title="Dodavanje osoba"  description="" />
+    <siteMapNode url="~\RWAWebForms\AzuriranjeOsoba.aspx" title="Ažuriranje osoba"  description="" />
+    <siteMapNode url="~\RWAWebForms\PrikazOsoba.aspx" title="Prikaz osoba"  description="" />
+    <siteMapNode url="~\RWAWebForms\Postavke.aspx" title="Postavke"  description="" />
+
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="RWAWebForms.Master" EnableTheming="true" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <link href="Content/webForms.css" rel="stylesheet" />
+    <script src="Scripts/webFormsScript.js"></script>
+  
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+        <div class="container container-fluid ">
+            <div class="mainContainer">
+            
+            <header>
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-6 text-left" style="padding-top: 5px">
+                        <asp:ContentPlaceHolder ID="head" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+                    <%--hidden on login--%>
+                    <div class="col-lg-6 col-md-6 col-sm-6 text-right" style="padding-top: 5px">
+                        <asp:LinkButton runat="server" ID="btnUser" CssClass="btn btn-sm btn-success" Text="user" meta:resourcekey="btnUserResource1"/>
+                        <asp:LinkButton runat="server" ID="btnLogout" CssClass="btn btn-sm btn-warning" Text="Logout" meta:resourcekey="btnLogoutResource1" OnClick="btnLogout_Click"/>
+                       
+                    </div>
+                   
+                </div>
+
+                <hr style="margin-top: 3px;" />
+
+                <nav>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <asp:LinkButton runat="server" ID="btnAddNewPerson" CssClass="btn btn-default" Width="160px" Height="34px" PostBackUrl="~/RWAWebForms/DodavanjeOsoba.aspx" meta:resourcekey="btnAddNewPersonResource1"> <span class="glyphicon glyphicon-floppy-save"></span> Add new person</asp:LinkButton>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <asp:LinkButton runat="server"  CssClass="btn btn-default" Width="160px" Height="34px" ID="btnEdit" PostBackUrl="~/RWAWebForms/AzuriranjeOsoba.aspx" meta:resourcekey="btnEditResource1"><span class="glyphicon glyphicon-share"></span> Edit data</asp:LinkButton>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <asp:LinkButton runat="server" CssClass="btn btn-default" Width="160px" Height="34px" ID="btnPersonList" PostBackUrl="~/RWAWebForms/PrikazOsoba.aspx" meta:resourcekey="btnPersonListResource1"><span class="glyphicon glyphicon-list"></span> Person list</asp:LinkButton>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <asp:LinkButton runat="server" CssClass="btn btn-default" Width="160px" Height="34px" ID="btnSetup" PostBackUrl="~/RWAWebForms/Postavke.aspx" meta:resourcekey="btnSetupResource1"><span class="glyphicon glyphicon-cog"></span> Setup</asp:LinkButton>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                      
+                        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                        </div>
+                </nav>
+                <hr />
+            </header>
+
+        
+            <div class="content">
+               
+                         <asp:ContentPlaceHolder ID="content" runat="server">
+                        </asp:ContentPlaceHolder>
+                 
+                
+            </div>
+            <hr />
+
+            <footer >
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p>
+                    <%=DateTime.Now.ToLongDateString() %>
+                    <span id="projectName">"| RWA - <span style="color: red;">WebForms</span> - Project"
+                    </span>
+                </p>
+                <p class="repoInfo">
+                    <asp:Label ID="lblRepoInfo" runat="server" Text="..." meta:resourcekey="lblRepoInfoResource1" />
+                </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+            </div>
+                    </footer>
+
+        </div>
+            </div>
+    </form>
+
+</body>
+</html>

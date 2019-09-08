@@ -1,0 +1,3 @@
+ID;NAME;SURNAME;EMAIL1;EMAIL2;EMAIL3;TELEPHONE;CITY;STATUS;PASSWORD
+1;admin;admin;admin@email.com;;;Zagreb;Admin;123
+2;Antonela;Antiæ;anc@mail.com;anta@gmail.hr;;Varaždin;User;321
